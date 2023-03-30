@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="stopwatch.css" />
+    <script src="stopwatch.js" defer></script>
+  </head>
+  <body>
+    <div class="item">
+      <div class="first" id="item2"><a href="stopwatch.html">Stopwatch</a></div>
+      <div class="first" id="item1"><a href="timer.html">Timer</a></div>
+    </div>
+    <h1>Stopwatch</h1>
+    <div class="container">
+      <div class="wrapper">
+        <p>
+          <span class="hour text" id="hour">00</span>
+          <span>:</span>
+          <span class="minute text" id="min">00</span>
+          <span>:</span>
+          <span class="seconds text" id="seconds">00</span>
+          <span>.</span>
+          <span class="tens text" id="tens">00</span>
+        </p>
+      </div>
+      <div class="buttons" id="btn-div">
+        <button class="btn-start" id="start" onclick="startTimer(), buttonOp()">
+          START
+        </button>
+        <button class="btn-reset" id="reset" onclick="resetTimer()">
+          RESET
+        </button>
+      </div>
+    </div>
+    <script>
+      const item1 = document.getElementById("item1");
+      const item2 = document.getElementById("item2");
+      function demo(id) {}
+      item1.style.background = white;
+      item1.style.color = black;
+    </script>
+  </body>
+</html>
